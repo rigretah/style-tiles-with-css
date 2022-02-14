@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500&family=Quicksand:wght@400;700&family=Righteous&family=Yuji+Syuku&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -14,30 +14,30 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #FA9075;
+  --link-color: #B38378;
+  --link-hover-color: #4B64AD;
+  --color-4: #FA7DA6;
+  --color-5: #509AAD;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: 'Righteous', cursive;
+  --secondary-font: 'Quicksand', sans-serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
 }
 
 button {
-  transition: all 3s;
+  transition: all 4s;
 }
 
 a {
-  transition: all 3s;
+  transition: all 4s;
 }
 
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.2);
 }
 
 button:active {
@@ -46,7 +46,7 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 html {
   font-size: 100%;
@@ -154,11 +154,12 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(..img/background-flow-idea.png) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img/background-flow-idea.png) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-1 {
@@ -172,6 +173,7 @@ ul li:last-child {
 .images ul {
   flex-direction: column;
   text-align: center;
+
 }
 
 .images li {
@@ -218,8 +220,8 @@ button:focus-within {
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 p.typography-sample {
